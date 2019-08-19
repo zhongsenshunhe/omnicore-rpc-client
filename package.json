@@ -12,10 +12,9 @@
     "url": "git+https://github.com/zhongsenshunhe/omnicore-rpc-client.git"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha -t 20s ./test/**/*.spec.js",
     "lint": "./node_modules/.bin/eslint ./src --fix",
     "build": ".bin/build",
-    "prepublishOnly": "npm run build && npm run test"
+    "prepublishOnly": "npm run build"
   },
   "license": "MIT",
   "devDependencies": {

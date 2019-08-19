@@ -17,26 +17,26 @@ class OmniRpcClient extends RpcClient {
   }) {
     super(options)
   }
-
+  
   /**
    * omni_setautocommit
    * flag
    */
-  omni_setautocommit = function (...args) {
+  omni_setautocommit = function(...args) {
     return this.command('omni_setautocommit', ...args)
   }
 
   /**
    * omni_getactivations
    */
-  omni_getactivations = function (...args) {
+  omni_getactivations = function(...args) {
     return this.command('omni_getactivations', ...args)
   }
 
   /**
    * omni_getactivecrowdsales
    */
-  omni_getactivecrowdsales = function (...args) {
+  omni_getactivecrowdsales = function(...args) {
     return this.command('omni_getactivecrowdsales', ...args)
   }
 
@@ -44,7 +44,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getactivedexsells
    * ( address )
    */
-  omni_getactivedexsells = function (...args) {
+  omni_getactivedexsells = function(...args) {
     return this.command('omni_getactivedexsells', ...args)
   }
 
@@ -52,7 +52,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getallbalancesforaddress
    * "address"
    */
-  omni_getallbalancesforaddress = function (...args) {
+  omni_getallbalancesforaddress = function(...args) {
     return this.command('omni_getallbalancesforaddress', ...args)
   }
 
@@ -60,7 +60,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getallbalancesforid
    * propertyid
    */
-  omni_getallbalancesforid = function (...args) {
+  omni_getallbalancesforid = function(...args) {
     return this.command('omni_getallbalancesforid', ...args)
   }
 
@@ -68,7 +68,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getbalance
    * "address" propertyid
    */
-  omni_getbalance = function (...args) {
+  omni_getbalance = function(...args) {
     return this.command('omni_getbalance', ...args)
   }
 
@@ -76,7 +76,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getbalanceshash
    * propertyid
    */
-  omni_getbalanceshash = function (...args) {
+  omni_getbalanceshash = function(...args) {
     return this.command('omni_getbalanceshash', ...args)
   }
 
@@ -84,14 +84,14 @@ class OmniRpcClient extends RpcClient {
    * omni_getcrowdsale
    * propertyid ( verbose )
    */
-  omni_getcrowdsale = function (...args) {
+  omni_getcrowdsale = function(...args) {
     return this.command('omni_getcrowdsale', ...args)
   }
 
   /**
    * omni_getcurrentconsensushash
    */
-  omni_getcurrentconsensushash = function (...args) {
+  omni_getcurrentconsensushash = function(...args) {
     return this.command('omni_getcurrentconsensushash', ...args)
   }
 
@@ -99,7 +99,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getfeecache
    * ( propertyid )
    */
-  omni_getfeecache = function (...args) {
+  omni_getfeecache = function(...args) {
     return this.command('omni_getfeecache', ...args)
   }
 
@@ -107,7 +107,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getfeedistribution
    * distributionid
    */
-  omni_getfeedistribution = function (...args) {
+  omni_getfeedistribution = function(...args) {
     return this.command('omni_getfeedistribution', ...args)
   }
 
@@ -115,7 +115,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getfeedistributions
    * propertyid
    */
-  omni_getfeedistributions = function (...args) {
+  omni_getfeedistributions = function(...args) {
     return this.command('omni_getfeedistributions', ...args)
   }
 
@@ -123,7 +123,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getfeeshare
    * ( address ecosystem )
    */
-  omni_getfeeshare = function (...args) {
+  omni_getfeeshare = function(...args) {
     return this.command('omni_getfeeshare', ...args)
   }
 
@@ -131,7 +131,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getfeetrigger
    * ( propertyid )
    */
-  omni_getfeetrigger = function (...args) {
+  omni_getfeetrigger = function(...args) {
     return this.command('omni_getfeetrigger', ...args)
   }
 
@@ -139,14 +139,14 @@ class OmniRpcClient extends RpcClient {
    * omni_getgrants
    * propertyid
    */
-  omni_getgrants = function (...args) {
+  omni_getgrants = function(...args) {
     return this.command('omni_getgrants', ...args)
   }
 
   /**
-   * qweqeqwe
+   * omni_getinfo
    */
-  omni_getinfo = function (...args) {
+  omni_getinfo = function(...args) {
     return this.command('omni_getinfo', ...args)
   }
 
@@ -154,7 +154,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getmetadexhash
    * propertyId
    */
-  omni_getmetadexhash = function (...args) {
+  omni_getmetadexhash = function(...args) {
     return this.command('omni_getmetadexhash', ...args)
   }
 
@@ -162,7 +162,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getorderbook
    * propertyid ( propertyid )
    */
-  omni_getorderbook = function (...args) {
+  omni_getorderbook = function(...args) {
     return this.command('omni_getorderbook', ...args)
   }
 
@@ -170,7 +170,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getpayload
    * "txid"
    */
-  omni_getpayload = function (...args) {
+  omni_getpayload = function(...args) {
     return this.command('omni_getpayload', ...args)
   }
 
@@ -178,7 +178,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getproperty
    * propertyid
    */
-  omni_getproperty = function (...args) {
+  omni_getproperty = function(...args) {
     return this.command('omni_getproperty', ...args)
   }
 
@@ -186,7 +186,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getseedblocks
    * startblock endblock
    */
-  omni_getseedblocks = function (...args) {
+  omni_getseedblocks = function(...args) {
     return this.command('omni_getseedblocks', ...args)
   }
 
@@ -194,7 +194,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getsto
    * "txid" "recipientfilter"
    */
-  omni_getsto = function (...args) {
+  omni_getsto = function(...args) {
     return this.command('omni_getsto', ...args)
   }
 
@@ -202,7 +202,7 @@ class OmniRpcClient extends RpcClient {
    * omni_gettrade
    * "txid"
    */
-  omni_gettrade = function (...args) {
+  omni_gettrade = function(...args) {
     return this.command('omni_gettrade', ...args)
   }
 
@@ -210,7 +210,7 @@ class OmniRpcClient extends RpcClient {
    * omni_gettradehistoryforaddress
    * "address" ( count propertyid )
    */
-  omni_gettradehistoryforaddress = function (...args) {
+  omni_gettradehistoryforaddress = function(...args) {
     return this.command('omni_gettradehistoryforaddress', ...args)
   }
 
@@ -218,7 +218,7 @@ class OmniRpcClient extends RpcClient {
    * omni_gettradehistoryforpair
    * propertyid propertyid ( count )
    */
-  omni_gettradehistoryforpair = function (...args) {
+  omni_gettradehistoryforpair = function(...args) {
     return this.command('omni_gettradehistoryforpair', ...args)
   }
 
@@ -226,7 +226,7 @@ class OmniRpcClient extends RpcClient {
    * omni_gettransaction
    * "txid"
    */
-  omni_gettransaction = function (...args) {
+  omni_gettransaction = function(...args) {
     return this.command('omni_gettransaction', ...args)
   }
 
@@ -234,7 +234,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getwalletaddressbalances
    * ( includewatchonly )
    */
-  omni_getwalletaddressbalances = function (...args) {
+  omni_getwalletaddressbalances = function(...args) {
     return this.command('omni_getwalletaddressbalances', ...args)
   }
 
@@ -242,7 +242,7 @@ class OmniRpcClient extends RpcClient {
    * omni_getwalletbalances
    * ( includewatchonly )
    */
-  omni_getwalletbalances = function (...args) {
+  omni_getwalletbalances = function(...args) {
     return this.command('omni_getwalletbalances', ...args)
   }
 
@@ -250,7 +250,7 @@ class OmniRpcClient extends RpcClient {
    * omni_listblocktransactions
    * firstblock lastblock
    */
-  omni_listblocktransactions = function (...args) {
+  omni_listblocktransactions = function(...args) {
     return this.command('omni_listblocktransactions', ...args)
   }
 
@@ -258,7 +258,7 @@ class OmniRpcClient extends RpcClient {
    * omni_listblocktransactions
    * index
    */
-  omni_listblocktransactions = function (...args) {
+  omni_listblocktransactions = function(...args) {
     return this.command('omni_listblocktransactions', ...args)
   }
 
@@ -266,14 +266,14 @@ class OmniRpcClient extends RpcClient {
    * omni_listpendingtransactions
    * ( "address" )
    */
-  omni_listpendingtransactions = function (...args) {
+  omni_listpendingtransactions = function(...args) {
     return this.command('omni_listpendingtransactions', ...args)
   }
 
   /**
    * omni_listproperties
    */
-  omni_listproperties = function (...args) {
+  omni_listproperties = function(...args) {
     return this.command('omni_listproperties', ...args)
   }
 
@@ -281,7 +281,7 @@ class OmniRpcClient extends RpcClient {
    * omni_listtransactions
    * ( "address" count skip startblock endblock )
    */
-  omni_listtransactions = function (...args) {
+  omni_listtransactions = function(...args) {
     return this.command('omni_listtransactions', ...args)
   }
 
@@ -289,7 +289,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_cancelalltrades
    * ecosystem
    */
-  omni_createpayload_cancelalltrades = function (...args) {
+  omni_createpayload_cancelalltrades = function(...args) {
     return this.command('omni_createpayload_cancelalltrades', ...args)
   }
 
@@ -297,7 +297,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_canceltradesbypair
    * propertyidforsale propertiddesired
    */
-  omni_createpayload_canceltradesbypair = function (...args) {
+  omni_createpayload_canceltradesbypair = function(...args) {
     return this.command('omni_createpayload_canceltradesbypair', ...args)
   }
 
@@ -305,7 +305,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_canceltradesbyprice
    * propertyidforsale "amountforsale" propertiddesired "amountdesired"
    */
-  omni_createpayload_canceltradesbyprice = function (...args) {
+  omni_createpayload_canceltradesbyprice = function(...args) {
     return this.command('omni_createpayload_canceltradesbyprice', ...args)
   }
 
@@ -313,7 +313,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_changeissuer
    * propertyid
    */
-  omni_createpayload_changeissuer = function (...args) {
+  omni_createpayload_changeissuer = function(...args) {
     return this.command('omni_createpayload_changeissuer', ...args)
   }
 
@@ -321,7 +321,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_closecrowdsale
    * propertyid
    */
-  omni_createpayload_closecrowdsale = function (...args) {
+  omni_createpayload_closecrowdsale = function(...args) {
     return this.command('omni_createpayload_closecrowdsale', ...args)
   }
 
@@ -329,7 +329,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_dexaccept
    * propertyid "amount"
    */
-  omni_createpayload_dexaccept = function (...args) {
+  omni_createpayload_dexaccept = function(...args) {
     return this.command('omni_createpayload_dexaccept', ...args)
   }
 
@@ -337,7 +337,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_dexsell
    * propertyidforsale "amountforsale" "amountdesired" paymentwindow minacceptfee action
    */
-  omni_createpayload_dexsell = function (...args) {
+  omni_createpayload_dexsell = function(...args) {
     return this.command('omni_createpayload_dexsell', ...args)
   }
 
@@ -345,7 +345,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_disablefreezing
    * propertyid
    */
-  omni_createpayload_disablefreezing = function (...args) {
+  omni_createpayload_disablefreezing = function(...args) {
     return this.command('omni_createpayload_disablefreezing', ...args)
   }
 
@@ -353,7 +353,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_enablefreezing
    * propertyid
    */
-  omni_createpayload_enablefreezing = function (...args) {
+  omni_createpayload_enablefreezing = function(...args) {
     return this.command('omni_createpayload_enablefreezing', ...args)
   }
 
@@ -361,7 +361,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_freeze
    * "toaddress" propertyid amount 
    */
-  omni_createpayload_freeze = function (...args) {
+  omni_createpayload_freeze = function(...args) {
     return this.command('omni_createpayload_freeze', ...args)
   }
 
@@ -369,7 +369,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_grant
    * propertyid "amount" ( "memo" )
    */
-  omni_createpayload_grant = function (...args) {
+  omni_createpayload_grant = function(...args) {
     return this.command('omni_createpayload_grant', ...args)
   }
 
@@ -377,7 +377,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_issuancecrowdsale
    * ecosystem type previousid "category" "subcategory" "name" "url" "data" propertyiddesired tokensperunit deadline earlybonus issuerpercentage
    */
-  omni_createpayload_issuancecrowdsale = function (...args) {
+  omni_createpayload_issuancecrowdsale = function(...args) {
     return this.command('omni_createpayload_issuancecrowdsale', ...args)
   }
 
@@ -385,7 +385,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_issuancefixed
    * ecosystem type previousid "category" "subcategory" "name" "url" "data" "amount"
    */
-  omni_createpayload_issuancefixed = function (...args) {
+  omni_createpayload_issuancefixed = function(...args) {
     return this.command('omni_createpayload_issuancefixed', ...args)
   }
 
@@ -393,7 +393,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_issuancemanaged
    * ecosystem type previousid "category" "subcategory" "name" "url" "data"
    */
-  omni_createpayload_issuancemanaged = function (...args) {
+  omni_createpayload_issuancemanaged = function(...args) {
     return this.command('omni_createpayload_issuancemanaged', ...args)
   }
 
@@ -401,7 +401,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_revoke
    * propertyid "amount" ( "memo" )
    */
-  omni_createpayload_revoke = function (...args) {
+  omni_createpayload_revoke = function(...args) {
     return this.command('omni_createpayload_revoke', ...args)
   }
 
@@ -409,7 +409,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_sendall
    * ecosystem
    */
-  omni_createpayload_sendall = function (...args) {
+  omni_createpayload_sendall = function(...args) {
     return this.command('omni_createpayload_sendall', ...args)
   }
 
@@ -417,7 +417,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_simplesend
    * propertyid "amount"
    */
-  omni_createpayload_simplesend = function (...args) {
+  omni_createpayload_simplesend = function(...args) {
     return this.command('omni_createpayload_simplesend', ...args)
   }
 
@@ -425,7 +425,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_sto
    * propertyid "amount" ( distributionproperty )
    */
-  omni_createpayload_sto = function (...args) {
+  omni_createpayload_sto = function(...args) {
     return this.command('omni_createpayload_sto', ...args)
   }
 
@@ -433,7 +433,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_trade
    * propertyidforsale "amountforsale" propertiddesired "amountdesired"
    */
-  omni_createpayload_trade = function (...args) {
+  omni_createpayload_trade = function(...args) {
     return this.command('omni_createpayload_trade', ...args)
   }
 
@@ -441,7 +441,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createpayload_unfreeze
    * "toaddress" propertyid amount 
    */
-  omni_createpayload_unfreeze = function (...args) {
+  omni_createpayload_unfreeze = function(...args) {
     return this.command('omni_createpayload_unfreeze', ...args)
   }
 
@@ -449,7 +449,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createrawtx_change
    * "rawtx" "prevtxs" "destination" fee ( position )
    */
-  omni_createrawtx_change = function (...args) {
+  omni_createrawtx_change = function(...args) {
     return this.command('omni_createrawtx_change', ...args)
   }
 
@@ -457,7 +457,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createrawtx_input
    * "rawtx" "txid" n
    */
-  omni_createrawtx_input = function (...args) {
+  omni_createrawtx_input = function(...args) {
     return this.command('omni_createrawtx_input', ...args)
   }
 
@@ -465,7 +465,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createrawtx_multisig
    * "rawtx" "payload" "seed" "redeemkey"
    */
-  omni_createrawtx_multisig = function (...args) {
+  omni_createrawtx_multisig = function(...args) {
     return this.command('omni_createrawtx_multisig', ...args)
   }
 
@@ -473,7 +473,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createrawtx_opreturn
    * "rawtx" "payload"
    */
-  omni_createrawtx_opreturn = function (...args) {
+  omni_createrawtx_opreturn = function(...args) {
     return this.command('omni_createrawtx_opreturn', ...args)
   }
 
@@ -481,7 +481,7 @@ class OmniRpcClient extends RpcClient {
    * omni_createrawtx_reference
    * "rawtx" "destination" ( amount )
    */
-  omni_createrawtx_reference = function (...args) {
+  omni_createrawtx_reference = function(...args) {
     return this.command('omni_createrawtx_reference', ...args)
   }
 
@@ -489,7 +489,7 @@ class OmniRpcClient extends RpcClient {
    * omni_decodetransaction
    * "rawtx" ( "prevtxs" height )
    */
-  omni_decodetransaction = function (...args) {
+  omni_decodetransaction = function(...args) {
     return this.command('omni_decodetransaction', ...args)
   }
 
@@ -497,7 +497,7 @@ class OmniRpcClient extends RpcClient {
    * omni_funded_send
    * "fromaddress" "toaddress" propertyid "amount" "feeaddress"
    */
-  omni_funded_send = function (...args) {
+  omni_funded_send = function(...args) {
     return this.command('omni_funded_send', ...args)
   }
 
@@ -505,7 +505,7 @@ class OmniRpcClient extends RpcClient {
    * omni_funded_sendall
    * "fromaddress" "toaddress" ecosystem "feeaddress"
    */
-  omni_funded_sendall = function (...args) {
+  omni_funded_sendall = function(...args) {
     return this.command('omni_funded_sendall', ...args)
   }
 
@@ -513,7 +513,7 @@ class OmniRpcClient extends RpcClient {
    * omni_send
    * "fromaddress" "toaddress" propertyid "amount" ( "redeemaddress" "referenceamount" )
    */
-  omni_send = function (...args) {
+  omni_send = function(...args) {
     return this.command('omni_send', ...args)
   }
 
@@ -521,7 +521,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendall
    * "fromaddress" "toaddress" ecosystem ( "redeemaddress" "referenceamount" )
    */
-  omni_sendall = function (...args) {
+  omni_sendall = function(...args) {
     return this.command('omni_sendall', ...args)
   }
 
@@ -529,7 +529,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendcancelalltrades
    * "fromaddress" ecosystem
    */
-  omni_sendcancelalltrades = function (...args) {
+  omni_sendcancelalltrades = function(...args) {
     return this.command('omni_sendcancelalltrades', ...args)
   }
 
@@ -537,7 +537,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendcanceltradesbypair
    * "fromaddress" propertyidforsale propertiddesired
    */
-  omni_sendcanceltradesbypair = function (...args) {
+  omni_sendcanceltradesbypair = function(...args) {
     return this.command('omni_sendcanceltradesbypair', ...args)
   }
 
@@ -545,7 +545,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendcanceltradesbyprice
    * "fromaddress" propertyidforsale "amountforsale" propertiddesired "amountdesired"
    */
-  omni_sendcanceltradesbyprice = function (...args) {
+  omni_sendcanceltradesbyprice = function(...args) {
     return this.command('omni_sendcanceltradesbyprice', ...args)
   }
 
@@ -553,7 +553,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendchangeissuer
    * "fromaddress" "toaddress" propertyid
    */
-  omni_sendchangeissuer = function (...args) {
+  omni_sendchangeissuer = function(...args) {
     return this.command('omni_sendchangeissuer', ...args)
   }
 
@@ -561,7 +561,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendclosecrowdsale
    * "fromaddress" propertyid
    */
-  omni_sendclosecrowdsale = function (...args) {
+  omni_sendclosecrowdsale = function(...args) {
     return this.command('omni_sendclosecrowdsale', ...args)
   }
 
@@ -569,7 +569,7 @@ class OmniRpcClient extends RpcClient {
    * omni_senddexaccept
    * "fromaddress" "toaddress" propertyid "amount" ( override )
    */
-  omni_senddexaccept = function (...args) {
+  omni_senddexaccept = function(...args) {
     return this.command('omni_senddexaccept', ...args)
   }
 
@@ -577,7 +577,7 @@ class OmniRpcClient extends RpcClient {
    * omni_senddexsell
    * "fromaddress" propertyidforsale "amountforsale" "amountdesired" paymentwindow minacceptfee action
    */
-  omni_senddexsell = function (...args) {
+  omni_senddexsell = function(...args) {
     return this.command('omni_senddexsell', ...args)
   }
 
@@ -585,7 +585,7 @@ class OmniRpcClient extends RpcClient {
    * omni_senddisablefreezing
    * "fromaddress" propertyid
    */
-  omni_senddisablefreezing = function (...args) {
+  omni_senddisablefreezing = function(...args) {
     return this.command('omni_senddisablefreezing', ...args)
   }
 
@@ -593,7 +593,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendenablefreezing
    * "fromaddress" propertyid
    */
-  omni_sendenablefreezing = function (...args) {
+  omni_sendenablefreezing = function(...args) {
     return this.command('omni_sendenablefreezing', ...args)
   }
 
@@ -601,7 +601,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendfreeze
    * "fromaddress" "toaddress" propertyid amount 
    */
-  omni_sendfreeze = function (...args) {
+  omni_sendfreeze = function(...args) {
     return this.command('omni_sendfreeze', ...args)
   }
 
@@ -609,7 +609,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendgrant
    * "fromaddress" "toaddress" propertyid "amount" ( "memo" )
    */
-  omni_sendgrant = function (...args) {
+  omni_sendgrant = function(...args) {
     return this.command('omni_sendgrant', ...args)
   }
 
@@ -617,7 +617,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendissuancecrowdsale
    * "fromaddress" ecosystem type previousid "category" "subcategory" "name" "url" "data" propertyiddesired tokensperunit deadline ( earlybonus issuerpercentage )
    */
-  omni_sendissuancecrowdsale = function (...args) {
+  omni_sendissuancecrowdsale = function(...args) {
     return this.command('omni_sendissuancecrowdsale', ...args)
   }
 
@@ -625,7 +625,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendissuancefixed
    * "fromaddress" ecosystem type previousid "category" "subcategory" "name" "url" "data" "amount"
    */
-  omni_sendissuancefixed = function (...args) {
+  omni_sendissuancefixed = function(...args) {
     return this.command('omni_sendissuancefixed', ...args)
   }
 
@@ -633,7 +633,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendissuancemanaged
    * "fromaddress" ecosystem type previousid "category" "subcategory" "name" "url" "data"
    */
-  omni_sendissuancemanaged = function (...args) {
+  omni_sendissuancemanaged = function(...args) {
     return this.command('omni_sendissuancemanaged', ...args)
   }
 
@@ -641,7 +641,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendrawtx
    * "fromaddress" "rawtransaction" ( "referenceaddress" "redeemaddress" "referenceamount" )
    */
-  omni_sendrawtx = function (...args) {
+  omni_sendrawtx = function(...args) {
     return this.command('omni_sendrawtx', ...args)
   }
 
@@ -649,7 +649,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendrevoke
    * "fromaddress" propertyid "amount" ( "memo" )
    */
-  omni_sendrevoke = function (...args) {
+  omni_sendrevoke = function(...args) {
     return this.command('omni_sendrevoke', ...args)
   }
 
@@ -657,7 +657,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendsto
    * "fromaddress" propertyid "amount" ( "redeemaddress" distributionproperty )
    */
-  omni_sendsto = function (...args) {
+  omni_sendsto = function(...args) {
     return this.command('omni_sendsto', ...args)
   }
 
@@ -665,7 +665,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendtrade
    * "fromaddress" propertyidforsale "amountforsale" propertiddesired "amountdesired"
    */
-  omni_sendtrade = function (...args) {
+  omni_sendtrade = function(...args) {
     return this.command('omni_sendtrade', ...args)
   }
 
@@ -673,7 +673,7 @@ class OmniRpcClient extends RpcClient {
    * omni_sendunfreeze
    * "fromaddress" "toaddress" propertyid amount 
    */
-  omni_sendunfreeze = function (...args) {
+  omni_sendunfreeze = function(...args) {
     return this.command('omni_sendunfreeze', ...args)
   }
 }
