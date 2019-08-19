@@ -1,5 +1,29 @@
+# babel files
+.babelrc
+
+# config files
+.editorconfig
+conf.json
+
+# git files
 .git/
-.bin/
-test/
-.eslintrc
 .gitignore
+
+# binary files
+.bin/
+
+# eslint files
+.eslintrc
+.eslintignore
+
+# source codes
+src/
+
+# test files
+test/
+
+# npm files
+.npmignore
+
+# build files
+build/

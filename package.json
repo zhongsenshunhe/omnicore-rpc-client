@@ -15,8 +15,7 @@
     "test": "./node_modules/.bin/mocha -t 20s ./test/**/*.spec.js",
     "lint": "./node_modules/.bin/eslint ./src --fix",
     "build": ".bin/build",
-    "babel-compile": "cd src && ../node_modules/.bin/babel ./*.js -d ../",
-    "prepublishOnly": "npm run build && npm run babel-compile && npm run test"
+    "prepublishOnly": "npm run build && npm run test"
   },
   "license": "MIT",
   "devDependencies": {
