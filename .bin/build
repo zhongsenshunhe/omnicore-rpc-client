@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+'use strict'
+
+const path = require('path')
+const fs = require('fs')
+
+const dir = path.join(__dirname, '../src')
+const excludes = []
+
+const filepaths = fs.readdirSync(dir).filter(filename => filename.endsWith('.js') && !excludes.includes(filename))
+const data = filepaths.map(path => ({ name: path.split('.js')[0], path: `./${path}` }))
+
+console.log(`build start...\n\n${JSON.stringify(data,null,4)}\n`)
+
+fs.writeFileSync(path.resolve(__dirname, '../index.js'), `/* eslint-disable */
+module.exports = {
+${ data.map(d=> `  ${d.name}: require('${d.path}'),`).join('\n') }
+}
+`)
+
+console.log('build finished')
