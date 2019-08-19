@@ -5,27 +5,13 @@
     "describe": true,
     "it": true
   },
-  "extends": "airbnb",
   "parser": "babel-eslint",
+  "env": {
+    "es6": true
+  },
   "parserOptions": {
     "sourceType": "module",
-    "ecmaVersion": 6
-  },
-  "ecmaFeatures": {
-    "arrowFunctions": true,
-    "destructuring": true,
-    "classes": true,
-    "defaultParams": true,
-    "experimentalObjectRestSpread": true,
-    "blockBindings": true,
-    "modules": true,
-    "objectLiteralComputedProperties": true,
-    "objectLiteralShorthandMethods": true,
-    "objectLiteralShorthandProperties": true,
-    "restParams": true,
-    "spread": true,
-    "forOf": true,
-    "templateStrings": true
+    "ecmaVersion": 8
   },
   "rules": {
     "accessor-pairs": 2,
@@ -283,4 +269,3 @@
     ]
   }
 }
-

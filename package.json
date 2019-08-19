@@ -1,8 +1,16 @@
 {
   "name": "omnicore-rpc-client",
-  "version": "0.1.0",
-  "description": "Cybereits library template",
+  "author": {
+    "name": "marsoln",
+    "email": "marsoln1988@gmail.com"
+  },
+  "version": "0.0.1",
+  "description": "Rpc client for omnicore wallet",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhongsenshunhe/omnicore-rpc-client.git"
+  },
   "scripts": {
     "test": "./node_modules/.bin/mocha -t 20s ./test/**/*.spec.js",
     "lint": "./node_modules/.bin/eslint ./src --fix",
@@ -10,18 +18,14 @@
     "babel-compile": "cd src && ../node_modules/.bin/babel ./*.js -d ../",
     "prepublishOnly": "npm run build && npm run babel-compile && npm run test"
   },
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
-    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
-    "chai": "^4.1.2",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^15.0.1",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-react": "^7.0.1",
-    "mocha": "^5.1.1"
+    "eslint": "^6.2.0"
+  },
+  "dependencies": {
+    "bitcoin-core": "^2.2.0"
   }
 }
