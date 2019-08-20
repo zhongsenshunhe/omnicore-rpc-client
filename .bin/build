@@ -30,7 +30,7 @@ client.command('help').then((info) => {
 
   // console.log(commands)
 
-  fs.writeFileSync(path.resolve(__dirname, '../index.commonjs.js'), `const RpcClient = require('bitcoin-core')
+  fs.writeFileSync(path.resolve(__dirname, '../index.js'), `const RpcClient = require('bitcoin-core')
 
 class OmniRpcClient extends RpcClient {
   constructor(options = {
@@ -53,30 +53,5 @@ class OmniRpcClient extends RpcClient {
 ${addExtensionFunction(commands)}
 
 module.exports = OmniRpcClient
-`)
-
-  fs.writeFileSync(path.resolve(__dirname, '../index.js'), `import RpcClient from 'bitcoin-core'
-
-class OmniRpcClient extends RpcClient {
-  constructor(options = {
-    agentOptions,
-    headers,
-    host,
-    logger,
-    network,
-    password,
-    port,
-    ssl,
-    timeout,
-    username,
-    version,
-    wallet,
-  }) {
-    super(options)
-  }
-}
-${addExtensionFunction(commands)}
-
-export default OmniRpcClient
 `)
 })

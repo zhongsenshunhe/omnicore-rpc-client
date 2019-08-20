@@ -1,4 +1,4 @@
-import RpcClient from 'bitcoin-core'
+const RpcClient = require('bitcoin-core')
 
 class OmniRpcClient extends RpcClient {
   constructor(options = {
@@ -678,4 +678,4 @@ OmniRpcClient.prototype.omni_sendunfreeze = function(...args) {
   return this.command('omni_sendunfreeze', ...args)
 }
 
-export default OmniRpcClient
+module.exports = OmniRpcClient
