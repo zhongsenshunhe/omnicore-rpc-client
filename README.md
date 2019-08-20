@@ -2,6 +2,8 @@
 
 Rpc client for omnicore wallet
 
+> Notice: this library only works when your babel is using `babel-plugin-transform-object-rest-spread`
+
 ## Usage
 
 First install the lib with npm `npm i omnicore-rpc-client` or yarn `yarn add omnicore-rpc-client`
