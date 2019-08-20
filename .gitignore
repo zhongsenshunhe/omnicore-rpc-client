@@ -4,14 +4,8 @@
 # npm packages
 node_modules/
 
-# npm lock files
-package-lock.json
-
 # test files
 test/
-
-# publish files
-*.js
 
 # configuration files
 conf.json
