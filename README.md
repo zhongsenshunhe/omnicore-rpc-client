@@ -9,7 +9,9 @@ First install the lib with npm `npm i omnicore-rpc-client` or yarn `yarn add omn
 Then import the lib and create a RPC client
 
 ```javascript
-const OmniRpcClient = require('omnicore-rpc-client')
+import OmniRpcClient from 'omnicore-rpc-client/commonjs'
+// const OmniRpcClient = require('omnicore-rpc-client/commonjs')
+
 
 const Client = new OmniRpcClient({
   "host": "yourhost",

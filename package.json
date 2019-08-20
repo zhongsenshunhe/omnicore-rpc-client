@@ -4,7 +4,7 @@
     "name": "marsoln",
     "email": "marsoln1988@gmail.com"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Rpc client for omnicore wallet",
   "main": "index.js",
   "repository": {
