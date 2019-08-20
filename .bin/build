@@ -11,12 +11,12 @@ const client = new Client(options)
 
 const addExtensionFunction = (commands) =>
   commands.map(({ cmd, args }) => `
-  /**
-   * ${cmd}
-   ${args ? '* ' + args + '\n   */' : '*/'}
-  ${cmd} = function(...args) {
-    return this.command('${cmd}', ...args)
-  }`).join('\n')
+/**
+ * ${cmd}
+ ${args ? '* [' + args + ']\n */' : '*/'}
+OmniRpcClient.prototype.${cmd} = function(...args) {
+  return this.command('${cmd}', ...args)
+}`).join('\n')
 
 client.command('help').then((info) => {
   let omni_commands = info.split('\n').filter(t => t.startsWith('omni'))
@@ -49,8 +49,8 @@ class OmniRpcClient extends RpcClient {
   }) {
     super(options)
   }
-  ${addExtensionFunction(commands)}
 }
+${addExtensionFunction(commands)}
 
 module.exports = OmniRpcClient
 `)
